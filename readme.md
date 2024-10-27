@@ -174,6 +174,7 @@ https://api.archtube.space
 |Параметр|Тип значения|Описание|
 |-|-|-|
 |jwplayer|url|URL для скрипта JWPlayer|
+|jw_key|ключ|Скрипт с ключом для JWPlayer|
 |script|javascript|Скрипт с заполненными данными для загрузки видео. Для вывода на странице пользователям.|
 
 *Примечание: Обязательно нужно указать ```<div id="jwplayer"></div>``` в месте, где нужно вывести плеер. А так же между тегами ```<head></head>``` вставить url для jwplayer. Не вставляейте статично url для скрипта, т.к. периодически версия будет обновляться и url будет изменен.*
@@ -182,6 +183,7 @@ https://api.archtube.space
 ```
 {
 	"jwplayer": "<script src=\"{ URL скрыт }\/jwplayer.js\"><\/script>",
+	"jw_key": "<script>jwplayer.key = \"{ jw_key }\";<\/script>",
 	"script": "<script>{ script }<\/script>"
 }
 ```
